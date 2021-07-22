@@ -7,12 +7,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.header h3{
+    color: #dee2e6;   
+}
+
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #09203A;
     position: sticky;
+    z-index: 1000;
     top: 0;
 }
 
@@ -57,7 +62,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url('ruth.jpg') no-repeat center center/cover;
+    background: url('pics/ruth.jpg') no-repeat center center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -230,4 +235,31 @@ html{
 #send:hover{
     cursor: pointer;
     box-shadow: 0 0 10px white;
+}
+
+
+/* others*/
+.footer{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #010E3A;
+        color: white;
+        padding: 20px;
+        margin-top: 100px;
+        position: relative;
+}
+
+#brief{
+    width: 50%;
+    margin-top: 500px;
+    font-style: inherit;
+    text-align: left;
+    font-size: 19px;
+    margin-left: -500px;
+    position: relative;
+
 }
