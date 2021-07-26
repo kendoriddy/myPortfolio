@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
+
 body{
     min-height: 100vh;
 }
@@ -31,11 +31,6 @@ body{
         margin-left: -500px;
         position: relative;
     }
-=======
-.header h3{
-    color: #dee2e6;   
-}
->>>>>>> e5661be9e62422d2e963d13fc12c78bc9cf9c88c
 
 .navbar{
     display: flex;
@@ -43,7 +38,6 @@ body{
     align-items: center;
     background-color: #09203A;
     position: sticky;
-    z-index: 1000;
     top: 0;
     position: relative;
 }
@@ -92,11 +86,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-<<<<<<< HEAD
     background: url('./pics/ruth.jpg') no-repeat center center/cover;
-=======
-    background: url('pics/ruth.jpg') no-repeat center center/cover;
->>>>>>> e5661be9e62422d2e963d13fc12c78bc9cf9c88c
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -293,7 +283,6 @@ body{
     box-shadow: 0 0 10px white;
 }
 
-<<<<<<< HEAD
 .ico {
     position: fixed;
     width: 50px;
@@ -308,10 +297,6 @@ body{
     font-size: 22px;
 }
 
-=======
-
-/* others*/
->>>>>>> e5661be9e62422d2e963d13fc12c78bc9cf9c88c
 .footer{
         height: 150px;
         width: 100%;
@@ -326,7 +311,6 @@ body{
         position: relative;
 }
 
-<<<<<<< HEAD
 .footer ul{
     display: flex;
     list-style: none;
@@ -338,15 +322,7 @@ body{
     padding: 8px 15px;
     transition: all .5s ease;
 }
-=======
-#brief{
-    width: 50%;
-    margin-top: 500px;
-    font-style: inherit;
-    text-align: left;
-    font-size: 19px;
-    margin-left: -500px;
-    position: relative;
 
+@media only screen and (max-width: 600px) {
+    
 }
->>>>>>> e5661be9e62422d2e963d13fc12c78bc9cf9c88c
