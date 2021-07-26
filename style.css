@@ -7,13 +7,38 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    min-height: 100vh;
+}
+#logo{
+    width:50px;
+    height:50px;
+    margin-left:10px;
+    
+    }
+#logo img{
+    width:50px;
+    height:50px;
+    }
+
+    #brief{
+        width: 50%;
+        margin-top: 500px;
+        font-style: inherit;
+        text-align: left;
+        font-size: 19px;
+        margin-left: -500px;
+        position: relative;
+    }
+
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #09203A;
     position: sticky;
     top: 0;
+    position: relative;
 }
 
 .navbar ul{
@@ -32,7 +57,7 @@ html{
     text-decoration: none;
     color: white;
     padding: 8px 25px;
-    transition: all .5s ease;
+    transition: all 2s ease;
 }
 
 .navbar ul li a:hover{
@@ -41,6 +66,9 @@ html{
     box-shadow: 0 0 10px white;
 }
 
+.a[target] {
+    color: #fff;
+}
 
 /* About Me */
 #home{
@@ -57,7 +85,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url('ruth.jpg') no-repeat center center/cover;
+    background: url('./pics/ruth.jpg') no-repeat center center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -79,6 +107,28 @@ html{
     font: 3rem;
     text-align: center;
     margin: 40px 0px;
+}
+
+#anime{
+    animation: animate1 5s ease-in-out 1s infinite forwards;
+}
+
+@keyframes animate1 {
+    0%{
+        color: green;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: green;
+    }
 }
 
 .btn{
@@ -230,4 +280,44 @@ html{
 #send:hover{
     cursor: pointer;
     box-shadow: 0 0 10px white;
+}
+
+.ico {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+.footer{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #010E3A;
+        color: white;
+        padding: 20px;
+        margin-top: 100px;
+        position: relative;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    transition: all .5s ease;
 }

@@ -6,23 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/705d4a7b01.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
     <nav class="navbar">
+        <div class="header">
+            <div id="logo">
+                <img src="pics/linked.jpg" />
+                </div>
+       </div>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" target="_self">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">My Work</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+            <i class="fa fa-times"></i>
+        </div>
     </nav>
+    </header>
 
     <section id="home">
         <div class="main">
-            <h1 class="headings">HI, I AM <br> ONIFADE KEHINDE</h1>
+            <h1 class="headings" id="anime">HI, I AM <br> ONIFADE KEHINDE</h1>
             <button class="btn">
                 Hire me
             </button>
+        </div>
+        <div class="headings" id="brief"> 
+            <div class="prog">
+                <div class="html"> <h4 style="font-weight: 400; display: inline;">HTML5</h4><br>
+                <progress value = "95" max = "100" style="width: 70%;"></div>
+                <div class="CSS"> <h4 style="font-weight: 400; display: inline;">CSS</h4><br>
+                <progress value = "90" max = "100" style="width: 70%;"></div>
+                <div class="JS"> <h4 style="font-weight: 400; display: inline;">JavaScript</h4><br>
+                <progress value = "85" max = "100" style="width: 70%;"></div>
+                <div class="PHP"> <h4 style="font-weight: 400; display: inline;">PHP</h4><br>
+                <progress value = "90" max = "100" style="width: 70%;"></div>
+                <div class="mysql"> <h4 style="font-weight: 400; display: inline;">MySQL</h4><br>
+                <progress value = "85" max = "100" style="width: 70%;"></div>
+            </div>
+            <br>
+            
+            <p>I am an innovative Front End Developer with 6 years of experience building and maintaining
+                responsive websites. Proficient in HTML, CSS, jQuery, JavaScript and PHP, plus
+                modern libraries and frameworks. Passionate about usability and possess working
+                knowledge of Content Management Systems.</p>
         </div>
 
     </section>
@@ -30,7 +62,7 @@
     <section id="about">
         <h1 class="headings">ABOUT ME</h1>
         <div id="pic">
-            <img src="ken.jpg" alt="">
+            <img src="./pics/ken.jpg" alt="">
             <div id="intro">
                 <h2>ONIFADE KEHINDE</h2>
                 <p>I am a focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for engineering came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world industrial problems.</p>
@@ -42,12 +74,12 @@
     <section id="portfolio">
         <h1 class="headings">PORTFOLIO</h1>
         <div class="gallery">
-            <img src="chr.jpg" alt="">
-            <img src="chris.jpg" alt="">
-            <img src="florian.jpg" alt="">
-            <img src="james.jpg" alt="">
-            <img src="jer.jpg" alt="">
-            <img src="7.jpg" alt="">
+            <img src="./pics/chr.jpg" alt="">
+            <img src="./pics/chris.jpg" alt="">
+            <img src="./pics/florian.jpg" alt="">
+            <img src="./pics/james.jpg" alt="">
+            <img src="./pics/jer.jpg" alt="">
+            <img src="./pics/7.jpg" alt="">
 
         </div>
 
@@ -82,5 +114,17 @@
             <input type="submit" value="SEND" id="send">
         </form>
     </section>
+    <div class="footer" style="margin: 0px;">
+        <h3>Reach me here</h3><br>
+        <ul>
+            <li><a href="https://github.com/kendoriddy" target="_blank"><i class="fab fa-github"></a></i></li>
+            <li><a href="https://www.linkedin.com/in/kehindeonifade" target="_blank"><i class="fab fa-linkedin"></a></i></li>
+            <li><a href="https://twitter.com/RideOnOne09" target="_blank"><i class="fab fa-twitter"></a></i></li>
+        </ul>
+        <br>
+    <h4>Copyright &copy; 2021</h4> <br>
+    <h3>Onifade Kehinde Ridwan</h3>
+    </div>
+    <a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a>
 </body>
 </html>
