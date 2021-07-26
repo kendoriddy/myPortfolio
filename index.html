@@ -22,7 +22,12 @@
             <li><a href="#portfolio">My Work</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
-        
+        <div class="icon_menu">
+            <div class="icon"  >
+                <i class="fa fa-bars" style="color: white;"></i>
+                <i class="fa fa-times" style="color: white;" ></i>
+            </div>
+        </div>
     </nav>
     </header>
 
@@ -123,5 +128,20 @@
     <h3>Onifade Kehinde Ridwan</h3>
     </div>
     <a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a>
+
+
+    <script>
+        const selectElement = function(element) {
+    return document.querySelector('element')
+};
+
+const body = selectElement('body');
+const menuToggler = document.querySelector('.icon');
+menuToggler.addEventListener('click', function() {
+    let body = document.querySelector('body');
+    body.classList.toggle('open');
+});
+
+    </script>
 </body>
 </html>
