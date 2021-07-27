@@ -9,27 +9,28 @@
     <script src="https://kit.fontawesome.com/705d4a7b01.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
     <nav class="navbar">
         <div class="header">
             <div id="logo">
                 <img src="pics/linked.jpg" />
                 </div>
        </div>
-        <ul>
-            <li><a href="#home" target="_self">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">My Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <div class="icon_menu">
-            <div class="icon"  >
-                <i class="fa fa-bars" style="color: white;"></i>
-                <i class="fa fa-times" style="color: white;" ></i>
-            </div>
+
+       <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    
+       <div class="navbar-links">
+            <ul>
+                <li><a href="#home" target="_self">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </div>
     </nav>
-    </header>
 
     <section id="home">
         <div class="main">
@@ -129,19 +130,6 @@
     </div>
     <a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a>
 
-
-    <script>
-        const selectElement = function(element) {
-    return document.querySelector('element')
-};
-
-const body = selectElement('body');
-const menuToggler = document.querySelector('.icon');
-menuToggler.addEventListener('click', function() {
-    let body = document.querySelector('body');
-    body.classList.toggle('open');
-});
-
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
