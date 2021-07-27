@@ -41,6 +41,7 @@ body{
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1001;
 }
 
 .navbar ul{
@@ -96,7 +97,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
+    height: 900px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -364,9 +365,6 @@ body{
         width: 100%;
         flex-direction: column;
         background: #09203A;
-    }
-    .navbar-links ul li {
-        position: sticky;
     }
 
     .navbar-links li a {
