@@ -212,6 +212,7 @@
 #about {
     margin-bottom: 80px;
     padding: 20px;
+    background: #9ea7a9;
 }
 
 #about .headings {
@@ -239,6 +240,7 @@
     width: 60%;
     height: 90%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 #intro {
