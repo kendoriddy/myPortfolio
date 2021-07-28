@@ -121,11 +121,21 @@
 }
 
 /* Home */
+.home-first {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 #home{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 900px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     color: white;
@@ -136,7 +146,7 @@
     top: 0;
     right: 0;
     background: url('./pics/ruth.jpg') no-repeat center center/cover;
-    height: 900px;
+    height: 930px;
     width: 100%;
     z-index: -1;
     opacity: .8;
@@ -198,14 +208,55 @@
     font-weight: bold;
 }
 
+.summary {
+    width: 90%;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
 #brief{
     width: 50%;
-    margin-top: 500px;
+    margin-top: 400px;
     font-style: inherit;
     text-align: left;
     font-size: 19px;
     margin-left: -500px;
     position: relative;
+}
+@media screen and (max-width:350px) {
+    #brief{
+        width: 100%;
+        margin: auto;
+        margin-top: 400px;
+        padding: 15px;
+        position: relative;
+        height: 530px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #brief{
+        width: 100%;
+        margin: auto;
+        margin-top: 400px;
+        padding: 15px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #brief{
+        width: 100%;
+        margin: auto;
+        margin-top: 400px;
+        padding: 15px;
+        position: relative;
+    }
 }
 
 /* About*/
@@ -263,7 +314,8 @@
 #pic {
     width: 95%;
     
-}  
+}
+
 .pic-image img {
     width: 75%;
     height: 90%;
@@ -293,6 +345,10 @@
         height: 90%;
         object-fit: cover;
     }
+
+    #intro {
+        width: 100%;
+    }
     
 }
 
@@ -303,30 +359,60 @@
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 20px;
-    margin-top: -50px;
+    margin-top: -80px;
 }
 
-.gallery{
+.port {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.my-proj {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
-.gallery img{
+.my-projects{
+    
+}
+
+.project-desc {
+    padding: 10px;
+}
+
+.project-desc h4 {
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.project-desc p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.project-links {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-projects img{
     object-fit: cover;
     width: 100%;
     height: 240px;
 }
 
 @media screen and (max-width:900px) {
-    .gallery{
+    .my-proj{
         grid-template-columns: repeat(2, 1fr);
     }
     
 }
 
 @media screen and (max-width:600px) {
-    .gallery{
+    .my-proj{
         grid-template-columns: 1fr;
     }
     
@@ -391,6 +477,7 @@
     width: 50%;
     border: none;
     outline: none;
+    border-radius: 10px;
 }
 #msg{
     width: 50%;
@@ -398,6 +485,7 @@
     margin: 15px;
     border: none;
     outline: none;
+    border-radius: 10px;
 }
 #send{
     padding: 20px;
@@ -405,6 +493,7 @@
     margin: 40px;
     border: none;
     outline: none;
+    border-radius: 10px;
 }
 
 #send:hover{
@@ -454,7 +543,7 @@
 }
 
 .footer{
-        height: 150px;
+        height: 170px;
         width: 100%;
         text-align: center;
         display: flex;
