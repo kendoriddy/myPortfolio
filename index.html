@@ -9,56 +9,57 @@
     <script src="https://kit.fontawesome.com/705d4a7b01.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="pics/linked.jpg" />
-        </div>
-
-       <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-
-       <div class="navbar-links">
-            <ul>
-                <li><a href="#home" target="_self">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">My Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="masonry.html">Gallery</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home">
-        <div class="main">
-            <h1 class="headings" id="anime">HI, I AM <br> ONIFADE KEHINDE</h1>
-            <button class="btn">
-                Hire me
-            </button>
-        </div>
-        <div class="headings" id="brief"> 
-            <div class="prog">
-                <div class="html"> <h4 style="font-weight: 400; display: inline;">HTML5</h4><br>
-                <progress value = "95" max = "100" style="width: 70%;"></div>
-                <div class="CSS"> <h4 style="font-weight: 400; display: inline;">CSS</h4><br>
-                <progress value = "90" max = "100" style="width: 70%;"></div>
-                <div class="JS"> <h4 style="font-weight: 400; display: inline;">JavaScript</h4><br>
-                <progress value = "85" max = "100" style="width: 70%;"></div>
-                <div class="PHP"> <h4 style="font-weight: 400; display: inline;">PHP</h4><br>
-                <progress value = "90" max = "100" style="width: 70%;"></div>
-                <div class="mysql"> <h4 style="font-weight: 400; display: inline;">MySQL</h4><br>
-                <progress value = "85" max = "100" style="width: 70%;"></div>
+    <div class="navigation__container">
+        <div class="wrapper">
+            <div class="image__hamburger">
+                <div class="logo">
+                    <img src="pics/linked.jpg" />
+                </div>
+                <div class="open">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-            <br>
+            <nav class="navbar-links">
+                <ul>
+                    <li><a href="#home" target="_self">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="masonry.html" target="_blank">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section id="home">
+        <div class="container">
+            <div class="header">
+                 <h1 id="anime">HI, I AM <br> ONIFADE KEHINDE</h1>
+                <button class="btn">
+                    Hire me
+                </button>
+            </div>
+                <div class="progress">
+                    <div class="html"> <h4 style="font-weight: 400; display: inline;">HTML5</h4><br>
+                    <progress value = "95" max = "100" style="width: 70%;"></div>
+                    <div class="CSS"> <h4 style="font-weight: 400; display: inline;">CSS</h4><br>
+                    <progress value = "90" max = "100" style="width: 70%;"></div>
+                    <div class="JS"> <h4 style="font-weight: 400; display: inline;">JavaScript</h4><br>
+                    <progress value = "85" max = "100" style="width: 70%;"></div>
+                    <div class="PHP"> <h4 style="font-weight: 400; display: inline;">PHP</h4><br>
+                    <progress value = "90" max = "100" style="width: 70%;"></div>
+                    <div class="mysql"> <h4 style="font-weight: 400; display: inline;">MySQL</h4><br>
+                    <progress value = "85" max = "100" style="width: 70%;"></div>
+                </div>
+                <br>
             
-            <p>I am an innovative Front End Developer with 6 years of experience building and maintaining
+                <p>I am an innovative Front End Developer with 6 years of experience building and maintaining
                 responsive websites. Proficient in HTML, CSS, jQuery, JavaScript and PHP, plus
                 modern libraries and frameworks. Passionate about usability and possess working
                 knowledge of Content Management Systems.</p>
-        </div>
-
+            </div>
+        </div>    
     </section>
 
     <section id="about">
@@ -115,7 +116,6 @@
         </div>
 
     </section>
-
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
         <form action="post" class="form">
@@ -136,8 +136,9 @@
     <h4>Copyright &copy; 2021</h4> <br>
     <h3>Onifade Kehinde Ridwan</h3>
     </div>
-    <a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a>
-
+    <div class="arrow" onclick="ScrollToTop() ">
+        <a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a><a class="ico" href="#"><i class="fas fa-arrow-up"></i> </a>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
