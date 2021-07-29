@@ -169,7 +169,48 @@
     margin: 40px 0px;
 }
 
-#anime{
+.main {
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 1ms;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation: animate1 5s ease-in-out 1 forwards;
+}
+@keyframes animate1 {
+    0%{
+        right: 0%;
+        width: 250px;
+    }
+    50%{
+        width: 500px;
+        /* background-color: red; */
+        right: 300px;
+    }
+    100%{
+        right: 10%;
+        width: 500px;
+    }
+    0%{
+        color: green;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: green;
+    }
+    
+}
+
+/* #anime{
     animation: animate1 5s ease-in-out 1s infinite forwards;
 }
 
@@ -189,7 +230,7 @@
     100%{
         color: green;
     }
-}
+} */
 
 .btn{
     padding: 10px 35px;
