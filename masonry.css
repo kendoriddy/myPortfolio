@@ -38,3 +38,17 @@ figcaption {
   column-count: 4;
   column-gap: 10px;
 }
+
+@media screen and (max-width:600px) { 
+  .container {
+    column-count: 1;
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width:800px) { 
+  .container {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
