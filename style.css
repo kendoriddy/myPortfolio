@@ -185,7 +185,7 @@
     50%{
         width: 500px;
         /* background-color: red; */
-        right: 300px;
+        right: 30%;
     }
     100%{
         right: 10%;
